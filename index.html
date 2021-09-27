@@ -10,20 +10,23 @@
 <!-- Start navber Part -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand text-warning">Mannan</a>
-            <button 
-                class="navbar-toggler"
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navmenu">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </button>
+            <a href="#" class="navbar-brand text-warning d-none d-sm-block">Mannan</a>
+                <a class="nav-link d-lg-none" href="#home">
+                    <i class="fa fa-home active"></i>
+                </a>
+                <a class="nav-link d-lg-none" href="#about">
+                    <i class="fa fa-user active"></i>
+                </a>
+                <a class="nav-link d-lg-none" href="#my_skills">
+                    <i class="fa fa-laptop active"></i>
+                </a>
+                <a class="nav-link d-lg-none" href="#contact">
+                    <i class="fa fa-address-card active"></i>
+                </a>                
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#about">About</a>
@@ -40,7 +43,7 @@
     </nav>  
 
 <!-- Start Showcase Part -->
-    <section class="bg-dark text-light p-5 text-center text-sm-start">
+    <section id="home" class="bg-dark text-light p-5 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-around">
                 <img src="asset/img/Mannan.png" 
@@ -63,7 +66,8 @@
     </section>
 
 <!-- Start About Part -->
-    <section id="about" class="bg-dark text-light p-5 text-center text-sm-start">
+<span id="about" ></span>
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
@@ -119,9 +123,9 @@
 
 
 <!--My Skill-->
-    <section id="my_skills" class="mt-5">
+    <section id="my_skills">
        <div class="container">
-            <div>
+            <div class="text-center">
                  <h1><span class="text-warning">My </span>Skill</h1>
             </div>
             <div class="row p-5">
