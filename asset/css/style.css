@@ -12,8 +12,26 @@ html,body{
 body::before{
 	display: block;
 	content: '';
-	height: 60px;
+	height: 2rem;
 }
+
+#home::before{
+	display: block;
+	content: '';
+	height: 3rem;
+}
+#about::before{
+	display: block;
+	content: '';
+	height: 3rem;
+}
+#my_skills::before{
+		display: block;
+		content: '';
+		height: 4rem;
+	}
+
+
 
 /*text & Button*/
 
@@ -42,12 +60,7 @@ body::before{
 	.progress{
 		padding-left: 0px;
 	}
-	hr{
-		width: 30%;
-		height: 30px;
-		margin: 0 0 5px 0;
-		background: #FFF;
-	}
+	
 
 /***Navbar***/
 	.navbar-brand{
@@ -106,6 +119,21 @@ body::before{
 		text-decoration: none;
 		padding: 5px;
 	}
+	.fa-home, 
+	.fa-user,
+	.fa-laptop,
+	.fa-address-card{
+		text-decoration: none;
+		color: #FFF;
+		font-size: 20px;
+	}
+	.nav-link i:hover{
+		color: #FEBC39;
+	}
+
+	
+
+
 
 	
 
@@ -136,13 +164,14 @@ body::before{
 	    font-size: 1rem;
 	    font-weight: 300;
 	}
+	
+
+}
+
 }
 @media (max-width: 576px){
 
 }
 @media (max-width: 276px){
-
-	
-
 
 }
